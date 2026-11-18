@@ -1,0 +1,11 @@
+{
+  "source": "../server/src/domain.js",
+  "script": "node cloudbase/init.mjs",
+  "mode": "synthetic",
+  "services": [
+    "leave",
+    "scholarship",
+    "dorm-repair",
+    "activity"
+  ]
+}

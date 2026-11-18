@@ -1,0 +1,14 @@
+{
+  "name": "campuspilot-miniapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && node ../tools/build-miniapp.mjs",
+    "dev": "node ../tools/build-miniapp.mjs --watch"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.0",
+    "miniprogram-api-typings": "^5.1.0"
+  }
+}

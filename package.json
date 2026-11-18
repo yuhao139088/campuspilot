@@ -1,0 +1,21 @@
+{
+  "name": "campus-ai-miniapp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CampusPilot - AI-powered campus service WeChat mini program competition project",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "test:server": "npm --prefix server test",
+    "setup": "npm --prefix server ci && npm --prefix miniapp ci && npm --prefix miniapp run build",
+    "typecheck": "npm --prefix miniapp run typecheck && node miniapp/node_modules/typescript/bin/tsc -p packages/shared",
+    "check:miniapp": "node tools/check-miniapp.mjs",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix miniapp run build",
+    "dev:miniapp": "npm --prefix miniapp run dev",
+    "prepare:lan": "npm --prefix miniapp run build && node tools/prepare-lan-preview.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "commonjs"
+}

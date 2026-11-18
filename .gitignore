@@ -1,0 +1,29 @@
+# 本地数据
+data/
+*.log
+npm-debug.log*
+
+# 依赖
+node_modules/
+
+# 环境变量（示例文件保留）
+.env
+.env.*
+!.env.example
+
+# 小程序运行期产物（TypeScript 是唯一编辑源，JS 由 tools/build-miniapp.mjs 生成）
+miniapp/**/*.js
+miniapp/**/*.js.map
+# 平台 AI 技能目录下的 JS 为手写源码，不属于编译产物
+!miniapp/skills/**
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 其它
+coverage/
+dist/
+design-refs/
